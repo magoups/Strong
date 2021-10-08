@@ -1,3 +1,8 @@
+/*
+Rose : rgba(194, 100, 159,1);
+violet : rgba(73, 18, 132, 1);
+*/
+
 *{
     margin: 0;
     padding: 0;
@@ -36,11 +41,17 @@ header{
     margin-bottom: 70px;
 }
 
-header nav{
+header nav, button{
     font-size: 25px;
     font-weight: bold;
-    justify-content: space-between;
+}
+
+header nav, .headerContainer2{
     align-items: center;
+}
+
+header nav{
+    justify-content: space-between;
     padding: 15px;
 }
 
@@ -53,14 +64,12 @@ button{
     color: #FAFAFA;
     font-family: 'Times New Roman', Times, serif;
     background: transparent;
-    font-size: 25px;
-    font-weight: bold;
     padding: 5px 15px;
     border: 2px solid #FAFAFA;
     border-radius: 10px;
 }
 header a:hover{
-    color: rgba(73, 18, 132, 1);
+    color: #491284;
 }
 button:hover{
     background: rgba(73, 18, 132, .5);
@@ -99,4 +108,41 @@ footer img{
 .reseauxsociaux{
     gap: 30px;
     padding: 15px;
+}
+
+.tailleIcone{
+    height: 30px;
+    width: 30px;
+}
+
+.facebook{
+    background: url(img/icones/facebook.png) no-repeat center / cover;
+}
+
+.facebook:hover{
+    background: url(img/icones/facebook_violet.png) no-repeat center / cover;
+}
+
+.instagram{
+    background: url(/img/icones/instagram.png) no-repeat center / cover;
+}
+
+.instagram:hover{
+    background: url(/img/icones/instagram_violet.png) no-repeat center / cover;
+}
+
+.twitter{
+    background: url(/img/icones/twitter.png) no-repeat center / cover;
+}
+
+.twitter:hover{
+    background: url(/img/icones/twitter_violet.png) no-repeat center / cover;
+}
+
+.youtube{
+    background: url(/img/icones/youtube.png) no-repeat center / cover;
+}
+
+.youtube:hover{
+    background: url(/img/icones/youtube_violet.png) no-repeat center / cover;
 }
