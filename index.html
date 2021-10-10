@@ -1,38 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Strong</title>
     <link rel="stylesheet" href="style.css">   
 </head>
 
 <body>
-    <header>
-        <nav class="flex blanc">
+    <header class="grid">
+        <nav class="menu flex">
+            <h1>STRONG <br><span>Lorem ipsum</span> </h1>
             <ul class="flex">
                 <li><a href="#">Découverte</a></li>
-                <li><a href="#">Parlons en</a></li>
-            </ul>
-            <h1>STRONG</h1>
-            <ul class="flex headerContainer2">
+                <li><a href="#">Les avancées</a></li>
                 <li><a href="#">Les acteurs</a></li>
-                <li><a href="#">Elles témoignent</a></li>
-                <button class="flex">Contact</button>
+                <li><a href="#">Elles témoignent</a></li>  
+                <li><a href="#">Contact</a></li>  
             </ul>
         </nav>
+        <div class="backgroundImage"></div>
     </header>
 
+    <!------------------------- CHIFFRES PART 1 ----------------------------------->
+
     <main>
+        <section>
+            <h2>Quelques chiffres</h2>
+            <div class="numbersContainer flex">
+                <div class="number flex column">
+                    <img src="img/icones/woman_sign.png" alt="icone_symbole_femme">
+                    <h3>10%</h3>
+                    <p>de femmes <br> atteintes d’Endométriose</p>
+                </div>
+                <div class="number flex column">
+                    <img src="img/icones/doctor_color.png" alt="icone_docteur_femme">
+                    <h3>7 ans</h3>
+                    <p>en moyenne pour <br> diagnostiquer la maladie</p>
+                </div>
+                <div class="number flex column">
+                    <img src="img/icones/pain_color.png" alt="icone_douleur">
+                    <h3>70%</h3>
+                    <p>souffrent de douleurs <br> chroniques invalidantes</p>
+                </div>
+                <div class="number flex column">
+                    <img src="img/icones/baby_color.png" alt="icone_bébé">
+                    <h3>40%</h3>
+                    <p>rencontrent des <br> problèmes d'infertilité</p>
+                </div>
+                <div class="number flex column">
+                    <img src="img/icones/medicine_color.png" alt="icone_médicaments">
+                    <h3>0</h3>
+                    <p>traitement spécifique à <br> l'd’Endométriose</p>
+                </div>
+            </div>    
+        </section>
+
+    <!----------------------------------- DEFINITION PART 2 ----------------------------------->
+
+        <section>
+            <h2>Qu’est-ce que l’endométriose?</h2>
+                <div class="flex cardContainer">
+                    <div class="card cardDefinition carteRecto flex column"> 
+                        <h3>Définition</h3>
+                        <div class="sousDef flex">
+                            <p>L’endométriose est une maladie gynécologique fréquente qui touche près de 10 % des femmes. Elle se caractérise par la présence, hors de la cavité utérine, de tissu semblable à celui de la muqueuse de l’utérus.</p>
+                            <img src="/img/icones/turn-right.png" alt="icone_fleche_direction_droite">
+                        </div> 
+                    </div>
+                    <div class="card cardSymptoms carteRecto flex column">
+                        <h3>Symptômes</h3>
+                        <div class="sousDef flex">
+                            <p>Ils peuvent être multiples et liés à la localisation de la maladie, chroniques ou périodiques, ou totalement absents dans les formes asymptomatiques, et leur intensité n’est pas révélatrice de la gravité des lésions.</p>
+                            <img src="/img/icones/turn-right.png" alt="icone_fleche_direction_droite">
+                        </div>
+                    </div>
+                    <div class="card cardDifficult carteRecto flex column">
+                        <h3>Difficultés</h3>
+                        <div class="sousDef flex">
+                            <p>Plusieurs enquêtes récentes montrent que les répercussions de l’endométriose sur la vie professionnelle des femmes atteintes sont mal reconnues et mal prises en compte.</p>
+                            <img src="/img/icones/turn-right.png" alt="icone_fleche_direction_droite">
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    <!----------------------- AVANCÉES PART 3 ----------------------------------->
+        <section>
+            <h2>Avancées du diagnostic</h2>
+        </section>
 
 
+        <!----------------------- ACTRICES PART 4 ----------------------------------->
+        <section>
+            <h2>Actrices du changement</h2>
+        </section>
 
+
+    <!----------------------- TEMOIGNAGES PART 5 ----------------------------------->
+
+        <section class="testimonyContainer grid">
+            <div class="polaText">
+                <h2>Témoignages</h2>
+                <p>Médecins, patientes, entourages livrent leurs impressions, leurs vécus sur la maladie, la prise en charge et l’évolution dans le temps et leurs espoirs dans le traitement et l’amélioration de la vie de tous les jours.</p>
+            </div>
+
+            <div class="cardContainerPola flex">
+                <div class="cardPola">
+                    <div class="cardPolaImg portrait1 flex column"></div>
+                    <h3>Emma</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum architecto suscipit fuga corporis soluta.</p>
+                    <img src="img/icones/turn-around.png" alt="icone_retourner">
+                </div>
+                <div class="cardPola">
+                    <div class="cardPolaImg portrait2"></div>
+                    <h3>Manon</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum architecto suscipit fuga corporis soluta.</p>
+                    <img src="img/icones/turn-around.png" alt="icone_retourner">
+
+                </div>
+                <div class="cardPola">
+                    <div class="cardPolaImg portrait3"></div>
+                    <h3>Livia</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum architecto suscipit fuga corporis soluta.</p>
+                    <img src="img/icones/turn-around.png" alt="icone_retourner">
+
+                </div>
+                <div class="cardPola">
+                    <div class="cardPolaImg portrait4"></div>
+                    <h3>Johanna</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum architecto suscipit fuga corporis soluta.</p>
+                    <img src="img/icones/turn-around.png" alt="icone_retourner">
+                </div>
+            </div>
+        </section>
+
+    <!----------------------- CONTACT PART 6 ----------------------------------->
+
+        <section class="contactContainer grid">
+            <div class="introSection">
+                <h2>Contact</h2>
+                <p>N'hésitez pas à partager avec nous vos expériences qui aideront d'autres femmes à avancer dans leur prise en charge</p>
+            </div>
+
+            <div class="contactForm flex">
+                <div class="form flex column">
+                    <div class="formOne flex">
+                        <input type="text" class="champ champOne" placeholder="Nom">
+                        <input type="text" class="champ champOne" placeholder="Prénom">
+                    </div>
+                    <input type="text" class="champ" placeholder="Code postal">
+                    <input type="text" class="message" placeholder="Message">
+                    <div class="formButton flex">
+                        <button>ENVOYER</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
+    <!------------------------- FOOTER ----------------------------------->
+
     <footer>
-        <div class="flex blanc">
-            <div class="footerText flex">
+        <div class="flex ">
+            <div class="footerText flex white">
                 <p>Copyright © Strong 2021</p>
                 <p><a href="#">Mentions légales</a></p>
                 <p><a href="#">Plan du site</a></p>

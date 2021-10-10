@@ -1,6 +1,8 @@
 /*
 Rose : rgba(194, 100, 159,1);
 violet : rgba(73, 18, 132, 1);
+font-family: 'Montserrat', sans-serif;
+font-family: 'Playfair Display', serif;
 */
 
 *{
@@ -13,6 +15,9 @@ violet : rgba(73, 18, 132, 1);
 
 body{
     background: #FAFAFA;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 img {
@@ -22,52 +27,78 @@ img {
 
 a{
     text-decoration: none;
-    color: #FAFAFA;
+    color:#000000
+}
+
+section{
+    margin: 70px 0;
 }
 
 .flex{
     display: flex;
 }
+.grid{
+    display: grid;
+}
+.column{
+    flex-direction: column;
+}
 
-.blanc{
+.white{
     color:#FAFAFA
 }
 
 /* ---------------------- HEADER ---------------------------- */
+
 header{
-    background: url(img/background_img.gif) no-repeat center / cover;
-    width: 100%;
-    height: 600px;
-    margin-bottom: 70px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "nav img";
 }
 
-header nav, button{
+header nav {
+    grid-area: nav;
+    background: gold;
     font-size: 25px;
-    font-weight: bold;
-}
-
-header nav, .headerContainer2{
-    align-items: center;
-}
-
-header nav{
+    font-weight: 400;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
+}
+
+.backgroundImage{
+    /* background: blue; */
+    grid-area: img;
+    height: 550px;
+    background: url(img/background_img.gif) no-repeat center / cover;
+}
+
+h1{
+    display: inline;
+    grid-area: titre;
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: 500;
+    /* transform: rotate(-90deg); */
+    margin-bottom: 0;
+}
+
+h1 span{
+    font-size: 12px;
+    
 }
 
 header nav ul{
     list-style: none;
-    gap: 50px;
+    flex-direction: column;
 }
 
-button{
-    color: #FAFAFA;
-    font-family: 'Times New Roman', Times, serif;
-    background: transparent;
-    padding: 5px 15px;
-    border: 2px solid #FAFAFA;
-    border-radius: 10px;
+header nav ul li{
+    padding: 5px;
 }
+
+header nav li:nth-of-type(5){
+    margin-top: 30px;
+}
+
 header a:hover{
     color: #491284;
 }
@@ -76,16 +107,273 @@ button:hover{
 }
 
 /* ---------------------- MAIN ---------------------------- */
+/* ---------------------- COMMUN ---------------------------- */
+
+main{
+    width: 100%;
+}
+
+h2{
+    margin: 70px 40px;
+    font-size: 45px;
+}
+
+/* ---------------------- NUMBERS ---------------------------- */
+
+.numbersContainer{
+    /* background: #491284; */
+    gap:70px;
+    justify-content: center;
+}
 
 
+.number{
+    /* background: teal; */
+    justify-content: center;
+    align-items: center;
+}
+
+.number img{
+    height: 150px;
+    width: 150px;
+    border: 4px solid rgba(125, 57, 67, .8);
+    border-radius: 100px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.number h3{
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(125, 57, 67, .8);
+    margin-bottom: 10px;
+}
+
+.number p{
+    text-align: center;
+}
+
+/* ---------------------- GENERAL ---------------------------- */
+
+.cardContainer{
+    gap: 15px;
+}
+
+.card h3{
+    font-size: 45px;
+    /* transform: rotate(-90deg); */
+    /* position: absolute; */
+    align-self: flex-start;
+    width: 10%;
+}
+
+.card p{
+    padding:10px
+}
+
+.card img{
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    align-self: flex-end;
+}
+
+.card{
+    width: 33%;
+    height: 470px;
+    padding: 15px;
+    background: orangered;
+    justify-content: space-between;
+}
+
+.sousDef{
+    text-align: center;
+    background: rgba(250, 250, 250, .82);
+    border-radius: 10px;
+    height: 100px;
+}
+
+.sousDef button{
+    margin-bottom: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: 500;
+    background: transparent;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+.cardDefinition{
+    background: url(img/définition.jpeg) no-repeat center / cover;
+    border-radius: 0 10px 10px 0;
+}
+
+.cardSymptoms{
+    background: url(img/symptômes.jpeg) no-repeat center / cover;
+    border-radius: 10px;
+}
+.cardDifficult{
+    background: url(img/difficultés.jpeg) no-repeat center / cover;
+    border-radius: 10px 0 0 10px;
+}
 
 
+/* ---------------------- AVANCÉES ---------------------------- */
 
+
+/* ---------------------- ACTRICES ---------------------------- */
+
+
+/* ---------------------- TÉMOIGNAGES ---------------------------- */
+.testimonyContainer{
+    background: rgba(174, 112, 101, .7);
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "tem pola";
+}
+
+.polaText{
+    grid-area: tem;
+}
+
+.testimonyContainer h2, .testimonyContainer > p {
+    margin-bottom: 40px;
+}
+.polaText > p{
+    padding: 0 20px 0 60px;
+}
+
+.cardContainerPola{
+    grid-area: pola;
+    gap: 10px;
+}
+
+.cardPola{
+    background: #FAFAFA;
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 15px 40px 0;
+}
+
+.cardPolaImg{
+    height: 270px;
+    width: 270px;
+    border: 1px solid black;
+    margin: 15px 15px 0;
+}
+
+.portrait1{
+    background: url(img/portrait1.jpeg) no-repeat center / cover;
+}
+
+.portrait2{
+    background: url(img/portrait2.jpeg) no-repeat center / cover;
+}
+
+.portrait3{
+    background: url(img/portrait3.jpeg) no-repeat center / cover;
+}
+
+.portrait4{
+    background: url(img/portrait4.jpeg) no-repeat center / cover;
+}
+
+.cardPola p{
+    margin: 0 15px;
+    font-weight: 200;
+}
+
+.cardPola h3{
+    margin: 10px 15px;
+    font-size: 30px;
+}
+
+.cardPola img{
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin: 10px 15px;
+}
+
+/* ---------------------- CONTACT ---------------------------- */
+
+.contactContainer{
+    height: 50vh;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "intro form";
+}
+
+.introSection{
+    /* background-color: #491284; */
+    grid-area: intro;
+}
+
+.introSection p{
+    padding: 0 30px 0 60px;
+}
+
+.contactForm{
+    background-color: rgba(174, 112, 101, .2);
+    grid-area: form;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    /* background-color: burlywood; */
+    width: 50%;
+    gap:30px;
+}
+
+.form input, .contactForm button{
+    border: none;
+    background: transparent;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.form input{
+    color: #000000;
+    padding: 20px;
+    border-bottom: 3px solid rgba(125, 57, 67, .8);
+    margin: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    
+}
+
+.champ{
+    height: 50px;
+}
+
+.message{
+    height: 200px;
+}
+
+.champOne{
+    width: 50%;
+}
+
+
+.formButton button{
+    /* width: 20%; */
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(125, 57, 67, .8);
+    margin: -20px 30px 40px 0;
+}
+
+.formButton{
+    justify-content: flex-end;
+}
+
+.contactForm button:hover{
+    color: rgba(73, 18, 132, 1);
+}
 
 /* ---------------------- FOOTER ---------------------------- */
 
 footer{
-    background: rgba(194, 100, 159,1);   
+    background: rgba(194, 100, 159,1);  
 }
 
 footer div{
@@ -103,6 +391,10 @@ footer p:hover, footer a:hover{
 footer img{
     height: 30px;
     width: 30px;
+}
+
+footer a{
+    color: #FAFAFA;
 }
 
 .reseauxsociaux{
@@ -124,25 +416,25 @@ footer img{
 }
 
 .instagram{
-    background: url(/img/icones/instagram.png) no-repeat center / cover;
+    background: url(img/icones/instagram.png) no-repeat center / cover;
 }
 
 .instagram:hover{
-    background: url(/img/icones/instagram_violet.png) no-repeat center / cover;
+    background: url(img/icones/instagram_violet.png) no-repeat center / cover;
 }
 
 .twitter{
-    background: url(/img/icones/twitter.png) no-repeat center / cover;
+    background: url(img/icones/twitter.png) no-repeat center / cover;
 }
 
 .twitter:hover{
-    background: url(/img/icones/twitter_violet.png) no-repeat center / cover;
+    background: url(img/icones/twitter_violet.png) no-repeat center / cover;
 }
 
 .youtube{
-    background: url(/img/icones/youtube.png) no-repeat center / cover;
+    background: url(img/icones/youtube.png) no-repeat center / cover;
 }
 
 .youtube:hover{
-    background: url(/img/icones/youtube_violet.png) no-repeat center / cover;
+    background: url(img/icones/youtube_violet.png) no-repeat center / cover;
 }
