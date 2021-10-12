@@ -12,24 +12,36 @@
 </head>
 
 <body>
-    <header class="grid">
+    <header>
         <nav class="menu flex">
-            <h1>STRONG <br><span>Lorem ipsum</span> </h1>
+            <div class="menuTitre flex column">
+                <h1>STRONG</h1> 
+                <p>Fortes face à l'endométriose</p>
+            </div>
             <ul class="flex">
-                <li><a href="#">Découverte</a></li>
-                <li><a href="#">Les avancées</a></li>
-                <li><a href="#">Les acteurs</a></li>
-                <li><a href="#">Elles témoignent</a></li>  
-                <li><a href="#">Contact</a></li>  
+                <li><a href="#decouverte">Découverte</a></li>
+                <li><a href="#avancee">Les avancées</a></li>
+                <li><a href="#actrices">Les acteurs</a></li>
+                <li><a href="#temoignage">Elles témoignent</a></li>  
+                <li><a href="#contact">Contact</a></li>  
             </ul>
         </nav>
-        <div class="backgroundImage"></div>
     </header>
+
+    <section class="intro">
+        <div class="introText">
+            <h2>L'endométriose touche une femme sur huit ...</h2>
+            <p>Peu écoutées, mal renseignées et donc tardivement diagnostiquées, c'est le constat des femmes touchées par cette maladie. Heureusement grâce au numérique les choses évoluent.</p>
+            <p class="introBleu"><a href="#lesChiffres">En savoir plus</a></p>
+        </div>
+
+
+    </section>
 
     <!------------------------- CHIFFRES PART 1 ----------------------------------->
 
     <main>
-        <section>
+        <section id="lesChiffres">
             <h2>Quelques chiffres</h2>
             <div class="numbersContainer flex">
                 <div class="number flex column">
@@ -55,55 +67,157 @@
                 <div class="number flex column">
                     <img src="img/icones/medicine_color.png" alt="icone_médicaments">
                     <h3>0</h3>
-                    <p>traitement spécifique à <br> l'd’Endométriose</p>
+                    <p>traitement spécifique à <br> l’Endométriose</p>
                 </div>
             </div>    
         </section>
 
     <!----------------------------------- DEFINITION PART 2 ----------------------------------->
 
-        <section>
+        <section id="decouverte">
             <h2>Qu’est-ce que l’endométriose?</h2>
                 <div class="flex cardContainer">
-                    <div class="card cardDefinition carteRecto flex column"> 
-                        <h3>Définition</h3>
-                        <div class="sousDef flex">
-                            <p>L’endométriose est une maladie gynécologique fréquente qui touche près de 10 % des femmes. Elle se caractérise par la présence, hors de la cavité utérine, de tissu semblable à celui de la muqueuse de l’utérus.</p>
-                            <img src="/img/icones/turn-right.png" alt="icone_fleche_direction_droite">
-                        </div> 
-                    </div>
-                    <div class="card cardSymptoms carteRecto flex column">
-                        <h3>Symptômes</h3>
-                        <div class="sousDef flex">
-                            <p>Ils peuvent être multiples et liés à la localisation de la maladie, chroniques ou périodiques, ou totalement absents dans les formes asymptomatiques, et leur intensité n’est pas révélatrice de la gravité des lésions.</p>
-                            <img src="/img/icones/turn-right.png" alt="icone_fleche_direction_droite">
+                    <div class="card cardTextCont flex column">
+                        <img src="img/définition.jpeg" alt="photo_médicale">
+                        <div class="flex column cardText">
+                            <h3>Définition</h3> 
+                            <p>L’endométriose est une maladie gynécologique fréquente qui touche près de 10 % des femmes. Elle se caractérise par la présence, hors de la cavité utérine, de tissu semblable à celui de la muqueuse de l’utérus.<br> <br> Elle se définit comme la présence en dehors de la cavité utérine de tissu semblable à la muqueuse utérine qui subira, lors de chacun des cycles menstruels ultérieurs, l’influence des modifications hormonales. </p>
                         </div>
                     </div>
-                    <div class="card cardDifficult carteRecto flex column">
-                        <h3>Difficultés</h3>
-                        <div class="sousDef flex">
-                            <p>Plusieurs enquêtes récentes montrent que les répercussions de l’endométriose sur la vie professionnelle des femmes atteintes sont mal reconnues et mal prises en compte.</p>
-                            <img src="/img/icones/turn-right.png" alt="icone_fleche_direction_droite">
+
+                    <div class="cardTextCont flex column">
+                        <div class="card cardSymptoms flex column"></div>
+                        <div class="flex column cardText">
+                            <h3>Symptômes</h3> 
+                            <p>Ils peuvent être multiples et liés à la localisation de la maladie, chroniques ou périodiques, ou totalement absents dans les formes asymptomatiques, et leur intensité n’est pas révélatrice de la gravité des lésions.<br> <br> <br>Le symptôme le plus est la douleur, règles douloureuses (dysménorrhée), douleurs pelviennes fréquentes, difficulté pour uriner (dysurie), abdominales (ombilicales …), douleurs pelviennes pouvant irradier jusque dans la jambe (cruralgie), …</p>
+                        </div>
+                    </div>
+
+                    <div class="cardTextCont flex column">
+                        <div class="card cardDifficult flex column">
+                        </div>
+                        <div class="flex column cardText">
+                            <h3>Difficultés</h3> 
+                            <p>Plusieurs enquêtes récentes montrent que les répercussions de l’endométriose sur la vie professionnelle des femmes atteintes sont mal reconnues et mal prises en compte.<br>
+                            Pourtant, 65 % des femmes atteintes d’endométriose reconnaissent un impact négatif de la maladie sur leur quotidien professionnel. Douleurs, troubles digestifs et urinaires, effets secondaires des traitements, fatigue et fatigabilité… de nombreuses contraintes et désagréments qui peuvent notamment empêcher de tenir une station debout ou assise trop longtemps, causer de l’absentéisme voire mener à des ruptures de contrat de travail.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <!----------------------- AVANCÉES PART 3 ----------------------------------->
+        <section id="avancee">
+            <h2 class="titreText">Des avancées grâce au numérique</h2>
+            <p class="paraText">Dans les années 2000, la maladie n’etait pas pas prise au sérieux par les medecins et par conséquent les femmes n’etaient jamais diagnostiquées. Plus de 20 ans plus tard le délai de diagnostique est de 7 ans mais tend à diminuer grâce aux associations et leur portée sur internet ainsi que les réseaux sociaux et plus dernierement les plateformes médicales et les applications mobiles</p>
+
+            <h3 class="assoh3">Les associations
+            </h3>
+
+                <div class="rose">
+                    <div class="assoCont assoCont1 flex">
+                        <div class="assoImg assoEndo gauche"></div>
+                        <div class="assoText">
+                            <h3>EndoFrance</h3>
+                            <p>EndoFrance est une association qui agit depuis 2005.<br><br>Elle soutient, informe les personnes atteintes d’endométriose et leur entourage, mène des actions de sensibilisation et agit avec les pouvoirs publics et les professionnels de santé pour améliorer le parcours de soins et réduire le délai diagnostic.<br><br>Elle permet aussi la mise en place d’un site internet pour aider le grand public à s’informer sur la maladie. <br><br>Elle est agrée par le ministère des solidarités et de la santé depuis 2018 et lui permet d’avoir un poids dans les décisions et l’écriture des recommandations délivrées aux personnels soignant. <br><br>Ils organisentaussi des évènements partout en France ainsi que des évenements en visioconférence accessibles à tous. <br><br>Ils comptent aujourd’hui 49000 abonnés, un compte facebook, twitter et des videos youtube.</p>
+                        </div>
+                    </div>
+                    <div class="assoCont flex">
+                        <div class="assoText">
+                            <h3>EndoMind</h3>
+                            <p>Créee en 2014, cette association est crée par 2 personnes atteintes d’endométriose désireuses de déclencher une prise de conscience à grande échelle quant au sort de millions de femmes. <br> <br>
+                            Leur objetcif est de mieux faire connaître l’endométriose, changer le regard sur les malades et améliorer leur prise en charge globale.<br><br>
+                            Ils sont suivis aujourd’hui par 17000 abonnés via leur compte facebook, twitter.<br><br>En janvier 2021, ils créent la fondation pour la recherche sur l’endométriose.</p>
+                        </div>
+                        <div class="assoImg assoMind droite"></div>
+                    </div>
+                </div>
+
+                <h3 class="assoh3">Les réseaux sociaux</h3>
+
+                <div class="violet">
+                    <div class="assoCont flex">
+                        <div class="assoImg assoFace gauche"></div>
+                        <div class="assoText">
+                            <h3>Facebook</h3>
+                            <p>Avec l’arrivée des réseaux sociaux de nombreux groupes de paroles ont pu émerger et libérer la parole. <br><br>Les premiers posts facebook et tweets sont publiés en 2011. <br><br>Le premier groupe de parole arrive 2 ans plus tard.<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+                        </div>
+                    </div>
+
+                    <div class="assoCont flex">
+                        <div class="assoText">
+                            <h3>Instagram</h3>
+                            <p>Instagram n’est pas en reste avec de nombreux comptes ou les femmes racontent leur quotidien et rassemblent celle qui doutent encore sur leurs symptômes. <br> <br>MonEndo est l’une d’entre elle, elle fait face aux nombreux obstacles percus par la plupart des malades</p>
+                        </div>
+                        <div class="assoImg assoInsta droite">
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="assoh3">Les applications et évènements</h3>
+
+                <div class="nude">
+                    <div class="assoCont flex">
+                        <div class="assoImg assoEvent1 gauche"></div>
+                        <div class="assoText">
+                            <h3>EndoRun</h3>
+                            <p>La premiere EndoRun virtuelle est lancée. Elle permet de récolter des fonds pour la recherche.<br> <br>Chaque personne peut décider du lieu et de l’heure de son départ, de courir seul.e ou accompagné.e, de former des petits ou des grands groupes, de mobiliser son entreprise et de participer aux challenges qui seront proposés pendant cette période. <br> <br> La première course virtuelle a été organisée en 2020 et a été reconduite pour 2021.<br> <br>Des évènments mondiaux ont aussi été organisés, l’endoMarch a reunit des participants de nombreux pays et aide à la récolte de fond destinés à la recherche et le developpement de traitements.</p>
+                        </div>
+                    </div>
+
+                    <div class="assoCont flex">
+                        <div class="assoText">
+                            <h3>Fellow Metrios</h3>
+                            <p>Fellow Metrios est la premiere application permettant aux patientes un suivi de leur maladie et de programmer des téléconsultations.<br> <br>C’est un carnet de poche connecté qui vous aide à prendre en main le suivi de l’endométriose, son évolution et ses symptômes, à communiquer directement avec son médecin et à bénéficier de conseils pour agir sur les symptômes et améliorer la qualité de vie.<br> <br>Les objectifs sont d’offrir les outils qui permettent un suivi plus efficace et un accompagnement dans l’amélioration de votre qualité de vie.<br> <br>Un carnet de suivi permet de noter l’évaluation de la douleur et qualité de vie, mesure de l’activité physique et suivi de votre alimentation : les médecins peuvent adapter la prise en charge et leurs conseils en fonction de vos habitudes et données de santé.<br> <br>Des conseils personnalisés, des recommandations sont transmis par des spécialistes. Gérez vos consultations et traitements.</p>
+                        </div>
+                        <div class="assoImg assoEvent2 droite">
+                        </div>
+                    </div>
+
+                    <div class="assoCont flex">
+                        <div class="assoImg assoEvent3 gauche"></div>
+                        <div class="assoText">
+                            <h3>Endoziwig</h3>
+                            <p>Entrée de l’intelligence artificielle avec l’application Endoziwig.<br><br>C’est une plateforme d’accompagnement et de pré diagnostic de l’endométriose destinée à toutes les femmes désireuses de prendre en main leur santé avec pour objectif un diagnostic dix fois plus rapide, un temps de parcours de soins réduit de moitié, Une amélioration considérable de la qualité de vie <br><br><br><br><br><br><br></p>
                         </div>
                     </div>
                 </div>
         </section>
 
-    <!----------------------- AVANCÉES PART 3 ----------------------------------->
-        <section>
-            <h2>Avancées du diagnostic</h2>
-        </section>
-
 
         <!----------------------- ACTRICES PART 4 ----------------------------------->
-        <section>
-            <h2>Actrices du changement</h2>
+        <section id="actrices">
+            <h2 class="titreText">Actrices du changement</h2>
+            <p class="paraText">Ces femmes ont fait le choix de s’engager de divers manières pour changer les choses. Actrices, écrivaines, bloggeuses, présidentes d’associations, elles prennent toutes de leur temps pour médiatiser les évolutions et proposer de nouvelles solutions pour améliorer la prise en charge</p>
+
+            <div class="actriceCont grid">
+                <div class="photoLM actricePhoto"></div>
+                <div class="actriceText1 actriceText">
+                    <h3>Laëtitia Milot</h3>
+                    <h4>Marraine d'EndoFrance</h4>
+                    <p>“ Si il y a plus de 5 ans, j’ai choisi de soutenir EndoFrance c’est parce que j’ai perçu à travers sa communication, à travers les bénévoles que j’ai rencontré que cette association avait une attitude courageuse et positive face à cette maladie qui nous atteint. Comme vous, auprès d’EndoFrance, j’ai trouvé des informations scientifiques sérieuses, des conseils avisés et bienveillants dans mes choix médicaux et comme vous je partage cette attitude positive et adulte face à la maladie.”</p>
+                </div>
+
+                <div class="photoNC actricePhoto"></div>
+                <div class="actriceText2 actriceText">
+                    <h3>Nathalie Clary</h3>
+                    <h4>Marraine d'Endomind</h4>
+                    <p>Entre l’organisation de la première course à pied dédiée à l’endométriose, et les sollicitations médiatiques de bon augure, Nathalie voit ses journées filer à toute allure et ses responsabilités décliner les pauses : « En revanche, je ne l’autorise pas à empiéter sur ma vie, et refuse d’écouter cette douleur.»</p>
+                </div>
+
+                <div class="photoMRG actricePhoto"></div>
+                <div class="actriceText3 actriceText">
+                    <h3>Marie Rose Galles</h3>
+                    <h4>Bloggeuse et Ecrivaine</h4>
+                    <p>Depuis 2016, Marie-Rose Galès écrit le blog Endométriose mon amour, où elle aborde la maladie avec humour, tout en partageant des astuces et des informations scientifiques. Elle milite pour cette cause lors de conférences, notamment sur l’endométriose et la sexualité, expérience que l’on retrouve également dans ses ouvrages.<br>
+                    <a href="https://www.editions-tredaniel.com/marie-rose-gales-auteur-4172.html" target="blank">A découvrir ici</a></p>
+                </div>
+            </div>
         </section>
 
 
     <!----------------------- TEMOIGNAGES PART 5 ----------------------------------->
 
-        <section class="testimonyContainer grid">
+        <section class="testimonyContainer grid" id="temoignage">
             <div class="polaText">
                 <h2>Témoignages</h2>
                 <p>Médecins, patientes, entourages livrent leurs impressions, leurs vécus sur la maladie, la prise en charge et l’évolution dans le temps et leurs espoirs dans le traitement et l’amélioration de la vie de tous les jours.</p>
@@ -112,36 +226,32 @@
             <div class="cardContainerPola flex">
                 <div class="cardPola">
                     <div class="cardPolaImg portrait1 flex column"></div>
-                    <h3>Emma</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum architecto suscipit fuga corporis soluta.</p>
-                    <img src="img/icones/turn-around.png" alt="icone_retourner">
+                    <h3>Sophie <span>50 ans</span></h3>
+                    <p>"Ma vie est une bataille quotidienne depuis l'âge de 11 ans pour vivre comme tout le monde." <br> <br> <br></p>
                 </div>
                 <div class="cardPola">
                     <div class="cardPolaImg portrait2"></div>
-                    <h3>Manon</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum architecto suscipit fuga corporis soluta.</p>
-                    <img src="img/icones/turn-around.png" alt="icone_retourner">
+                    <h3>Léa <span>20 ans</span></h3>
+                    <p>"J'écris parce que je n'arrive pas à me défaire de la colère qui m'assaille quand on parle d'endométriose." <br> <br></p>
 
                 </div>
                 <div class="cardPola">
                     <div class="cardPolaImg portrait3"></div>
-                    <h3>Livia</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum architecto suscipit fuga corporis soluta.</p>
-                    <img src="img/icones/turn-around.png" alt="icone_retourner">
+                    <h3>Cindy <span>26 ans</span></h3>
+                    <p>"Je décide de tout plaquer et d'arrêter la pilule car je ne veux plus d'hormones dans mon corps." <br> <br> <br></p>
 
                 </div>
                 <div class="cardPola">
                     <div class="cardPolaImg portrait4"></div>
-                    <h3>Johanna</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eum architecto suscipit fuga corporis soluta.</p>
-                    <img src="img/icones/turn-around.png" alt="icone_retourner">
+                    <h3>Joana <span>19 ans</span></h3>
+                    <p>"Cette maladie ne me touche pas que physiquement, elle me touche aussi sentimentalement et psychologiquement."</p>
                 </div>
             </div>
         </section>
 
     <!----------------------- CONTACT PART 6 ----------------------------------->
 
-        <section class="contactContainer grid">
+        <section class="contactContainer grid" id="contact">
             <div class="introSection">
                 <h2>Contact</h2>
                 <p>N'hésitez pas à partager avec nous vos expériences qui aideront d'autres femmes à avancer dans leur prise en charge</p>
@@ -155,9 +265,7 @@
                     </div>
                     <input type="text" class="champ" placeholder="Code postal">
                     <input type="text" class="message" placeholder="Message">
-                    <div class="formButton flex">
-                        <button>ENVOYER</button>
-                    </div>
+                    <button class="formButton">ENVOYER</button>
                 </div>
             </div>
 
@@ -182,6 +290,5 @@
         </div>
     </footer>
 
-    
 </body>
 </html>

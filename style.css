@@ -1,6 +1,7 @@
 /*
 Rose : rgba(194, 100, 159,1);
 violet : rgba(73, 18, 132, 1);
+Nude: rgba(174, 112, 101, .7)
 font-family: 'Montserrat', sans-serif;
 font-family: 'Playfair Display', serif;
 */
@@ -16,8 +17,9 @@ font-family: 'Playfair Display', serif;
 body{
     background: #FAFAFA;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
+    margin: 0 40px;
 }
 
 img {
@@ -28,6 +30,10 @@ img {
 a{
     text-decoration: none;
     color:#000000
+}
+
+p{
+    line-height: 180%;
 }
 
 section{
@@ -49,61 +55,74 @@ section{
 }
 
 /* ---------------------- HEADER ---------------------------- */
-
 header{
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "nav img";
+    /* background: rgb(134, 134, 134); */
+    margin: 0 40px 30px;
 }
 
-header nav {
-    grid-area: nav;
-    background: gold;
-    font-size: 25px;
-    font-weight: 400;
+header nav{
+    /* background: forestgreen; */
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
 }
 
-.backgroundImage{
-    /* background: blue; */
-    grid-area: img;
-    height: 550px;
-    background: url(img/background_img.gif) no-repeat center / cover;
+header ul{
+    /* background: teal; */
+    list-style: none;
+}
+
+header li{
+    /* background: cornflowerblue; */
+    padding: 25px;
+    font-weight: 600;
 }
 
 h1{
     display: inline;
     grid-area: titre;
     font-family: 'Playfair Display', serif;
-    font-size: 50px;
-    font-weight: 500;
-    /* transform: rotate(-90deg); */
-    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: 500; 
 }
 
-h1 span{
-    font-size: 12px;
-    
-}
-
-header nav ul{
-    list-style: none;
-    flex-direction: column;
-}
-
-header nav ul li{
-    padding: 5px;
-}
-
-header nav li:nth-of-type(5){
-    margin-top: 30px;
+header nav p{
+    font-size: 16px;
+    text-align: center;
 }
 
 header a:hover{
     color: #491284;
 }
-button:hover{
-    background: rgba(73, 18, 132, .5);
+
+/* ---------------------- INTRO ---------------------------- */
+
+.intro{
+    background: url(img/background_img.gif) no-repeat center / cover;
+    height: 80vh;
+    color: #FAFAFA;
+    margin-top: 0;
+}
+
+.introText{
+    width: 50%;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.intro h2{
+    padding: 40px 0 20px 0;
+    margin: 0 40px;
+}
+
+.introText p{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0 80px;
+}
+
+.introBleu a{
+    font-weight: 600;
+    color: rgba(117, 50, 95, 1);
 }
 
 /* ---------------------- MAIN ---------------------------- */
@@ -114,8 +133,8 @@ main{
 }
 
 h2{
-    margin: 70px 40px;
-    font-size: 45px;
+    margin: 70px 0 70px 40px;
+    font-size: 36px;
 }
 
 /* ---------------------- NUMBERS ---------------------------- */
@@ -156,51 +175,31 @@ h2{
 /* ---------------------- GENERAL ---------------------------- */
 
 .cardContainer{
-    gap: 15px;
+    gap: 47px;
+    background: #491284;
 }
 
-.card h3{
-    font-size: 45px;
-    /* transform: rotate(-90deg); */
-    /* position: absolute; */
-    align-self: flex-start;
-    width: 10%;
+.cardText h3{
+    font-size: 18px;
+    margin: 30px 0 10px 0;
 }
 
-.card p{
-    padding:10px
+.cardText p{
+    font-size: 16px;
+    font-weight: 300;
 }
 
 .card img{
-    height: 30px;
-    width: 30px;
-    margin: 10px;
-    align-self: flex-end;
-}
-
-.card{
-    width: 33%;
-    height: 470px;
+    height:349px;
+    width: 349px;
     padding: 15px;
-    background: orangered;
-    justify-content: space-between;
+    /* background: orangered; */
+    /* justify-content: space-between; */
 }
 
-.sousDef{
-    text-align: center;
-    background: rgba(250, 250, 250, .82);
-    border-radius: 10px;
-    height: 100px;
-}
-
-.sousDef button{
-    margin-bottom: 10px;
-    border: 1px solid black;
-    font-size: 15px;
-    font-weight: 500;
-    background: transparent;
-    border-radius: 10px;
-    padding: 10px 15px;
+.cardText{
+    justify-content: center;
+    align-items: center;
 }
 
 .cardDefinition{
@@ -217,12 +216,188 @@ h2{
     border-radius: 10px 0 0 10px;
 }
 
-
 /* ---------------------- AVANCÉES ---------------------------- */
+.assoh3{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 70px 0 40px 0;
+}
+
+.titreText{
+    margin-bottom: 20px;
+}
+
+.paraText{
+    margin-left:40px;
+    width: 40%;
+}
+
+.assoFull{
+    margin-top: 70px;
+
+}
+
+.assoCont{
+    height: auto;
+    /* background: darkcyan; */
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.assoCont h3{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.assoCont p{
+    line-height: 150%;
+    font-size: 14px;
+}
+
+.gauche{
+    margin-left: 40px;
+}
+
+.droite{
+    margin-right: 40px;
+}
+
+.rose, .violet, .nude{
+    padding: 40px 0 20px 0;
+}
+
+.rose {
+    background: rgba(125, 57, 67, .2);
+}
+
+.rose p, .rose h3{
+    color: rgba(34, 15, 18, .6);
+}
+
+.violet{
+    background: rgba(73, 18, 132, .2);
+}
+
+.violet p, .violet h3{
+    color:rgba(25, 6, 46, 0.671);
+}
+
+.nude{
+    background: rgba(174, 112, 101, .2);
+}
+
+.nude p, .nude h3{
+    color: rgba(29, 19, 16, 0.6);
+}
+
+.assoImg{
+    width:100%
+}
+
+.assoEndo{
+    background: url(img/EndoFrance2.jpeg) no-repeat center / cover;
+}
+
+.assoText{
+    padding: 40px;
+}
+
+.assoMind{
+    background: url(img/ruban_jaune.jpeg) no-repeat center / cover;
+}
+
+.assoFace{
+    background: url(img/Post_facebook.png) no-repeat center / cover;
+}
+
+.assoInsta{
+    background: url(img/postinstax2.png) no-repeat center / cover;
+}
+
+.assoEvent1{
+    background: url(img/endorun_2021.jpeg) no-repeat center / cover;
+}
+
+.assoEvent2{
+    background: url(img/fellow-metrios-tel-écran.png) no-repeat center / cover;
+}
+
+.assoEvent3{
+    background: url(img/Endoziwig.png) no-repeat center / cover;
+}
+
+
 
 
 /* ---------------------- ACTRICES ---------------------------- */
 
+.actriceCont{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "LM text1 text1" "text2 text2 NC" "MRG text3 text3";
+}
+
+.actricePhoto{
+    height: 300px;
+    margin: 40px 40px 40px 0;
+    border-radius: 10px;
+}
+
+.photoLM{
+    grid-area: LM;
+    background: url(img/laetitia_milot.jpeg) no-repeat center / cover;
+}
+
+.actriceText1{
+    grid-area: text1;
+}
+
+.actriceText h3{
+    font-size: 36px;
+}
+
+.actriceText h4{
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.actriceText h3{
+    margin-bottom: 20px;
+}
+.actriceText p{
+    padding: 40px;
+}
+
+.photoNC{
+    grid-area: NC;
+    margin: 40px 0px 40px 40px;
+
+    background: url(img/Nathalie_Clary.jpeg) no-repeat center / cover;
+}
+
+.actriceText2{
+    grid-area: text2;
+    margin: 40px;
+}
+
+.photoMRG{
+    grid-area: MRG;
+    background: url(img/Marie_Rose_Gales.png) no-repeat center / cover;
+}
+
+.actriceText3{
+    grid-area: text3;
+    margin: 40px;
+}
+
+.actriceCont a:hover{
+    color: #491284;
+}
 
 /* ---------------------- TÉMOIGNAGES ---------------------------- */
 .testimonyContainer{
@@ -239,7 +414,7 @@ h2{
     margin-bottom: 40px;
 }
 .polaText > p{
-    padding: 0 20px 0 60px;
+    padding: 0 40px 0 40px;
 }
 
 .cardContainerPola{
@@ -251,12 +426,12 @@ h2{
     background: #FAFAFA;
     justify-content: space-around;
     align-items: center;
-    margin: 40px 15px 40px 0;
+    margin: 40px 0;
 }
 
 .cardPolaImg{
-    height: 270px;
-    width: 270px;
+    height: 220px;
+    width: 220px;
     border: 1px solid black;
     margin: 15px 15px 0;
 }
@@ -282,6 +457,11 @@ h2{
     font-weight: 200;
 }
 
+.cardPola span{
+    font-weight: 300;
+    font-size: 20px;
+}
+
 .cardPola h3{
     margin: 10px 15px;
     font-size: 30px;
@@ -291,13 +471,12 @@ h2{
     float: right;
     height: 30px;
     width: 30px;
-    margin: 10px 15px;
+    margin: 5px;
 }
 
 /* ---------------------- CONTACT ---------------------------- */
 
 .contactContainer{
-    height: 50vh;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: "intro form";
 }
@@ -319,7 +498,6 @@ h2{
 }
 
 .form{
-    /* background-color: burlywood; */
     width: 50%;
     gap:30px;
 }
@@ -354,7 +532,7 @@ h2{
 }
 
 
-.formButton button{
+.formButton{
     /* width: 20%; */
     font-weight: 600;
     font-size: 20px;
@@ -363,7 +541,7 @@ h2{
 }
 
 .formButton{
-    justify-content: flex-end;
+    align-self: flex-end;
 }
 
 .contactForm button:hover{
@@ -374,6 +552,7 @@ h2{
 
 footer{
     background: rgba(194, 100, 159,1);  
+    margin-top: 0 0 70px 0;
 }
 
 footer div{
