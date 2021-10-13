@@ -19,7 +19,8 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 500;
-    margin: 0 40px;
+    margin: 0 2%;
+    width: 96%;
 }
 
 img {
@@ -56,73 +57,79 @@ section{
 
 /* ---------------------- HEADER ---------------------------- */
 header{
-    /* background: rgb(134, 134, 134); */
-    margin: 0 40px 30px;
+    margin-bottom: 30px;
 }
 
 header nav{
-    /* background: forestgreen; */
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
 header ul{
-    /* background: teal; */
     list-style: none;
 }
 
 header li{
-    /* background: cornflowerblue; */
     padding: 25px;
     font-weight: 600;
 }
 
 h1{
-    display: inline;
-    grid-area: titre;
     font-family: 'Playfair Display', serif;
-    font-size: 60px;
+    font-size: clamp(30px,10vw, 60px);
     font-weight: 500; 
 }
 
 header nav p{
-    font-size: 16px;
+    font-size: clamp(10px, 10vw, 16px);
     text-align: center;
+}
+
+.menucontact{
+    padding-right: 0;
 }
 
 header a:hover{
     color: #491284;
 }
 
+/* #headerResponsiveBarre{
+    display: none;
+} */
 /* ---------------------- INTRO ---------------------------- */
 
 .intro{
     background: url(img/background_img.gif) no-repeat center / cover;
-    height: 80vh;
+    height: 100vh;
     color: #FAFAFA;
     margin-top: 0;
 }
 
 .introText{
     width: 50%;
-    font-size: 36px;
+    /* font-size: clamp(20px, 10vw, 36px); */
     font-weight: bold;
 }
 
 .intro h2{
     padding: 40px 0 20px 0;
     margin: 0 40px;
+    border: none;
+    font-size: clamp(20px, 10vw, 36px);
+    color: white;
 }
 
 .introText p{
-    font-size: 20px;
+    font-size: clamp(15px, 2.5vw, 22px);
     font-weight: normal;
     padding: 0 80px;
 }
 
 .introBleu a{
     font-weight: 600;
-    color: rgba(117, 50, 95, 1);
+    color: #FAFAFA;
+    text-decoration: underline;
 }
 
 /* ---------------------- MAIN ---------------------------- */
@@ -133,27 +140,32 @@ main{
 }
 
 h2{
-    margin: 70px 0 70px 40px;
-    font-size: 36px;
+    margin: 30px 0 70px ;
+    font-size: clamp(30px, 5vw, 70px);
+    color: #773461;
+}
+
+.border{
+    background-color: #773461;
+    height: 10px;
+    width: 20%;
 }
 
 /* ---------------------- NUMBERS ---------------------------- */
 
 .numbersContainer{
-    /* background: #491284; */
-    gap:70px;
-    justify-content: center;
+    gap:10px;
+    justify-content: space-between;
 }
 
 
 .number{
-    /* background: teal; */
     justify-content: center;
     align-items: center;
 }
 
 .number img{
-    height: 150px;
+    max-height: 150px;
     width: 150px;
     border: 4px solid rgba(125, 57, 67, .8);
     border-radius: 100px;
@@ -162,7 +174,7 @@ h2{
 }
 
 .number h3{
-    font-size: 60px;
+    font-size: clamp(40px,2vw, 60px);
     font-weight: bold;
     color: rgba(125, 57, 67, .8);
     margin-bottom: 10px;
@@ -170,58 +182,71 @@ h2{
 
 .number p{
     text-align: center;
+    font-size: clamp(12px,1vw, 16px);
+
 }
 
 /* ---------------------- GENERAL ---------------------------- */
 
-.cardContainer{
-    gap: 47px;
-    background: #491284;
+.cardContainer {
+    gap: 20px;
+    /* background: #491284; */
+    justify-content: space-around;
 }
 
-.cardText h3{
-    font-size: 18px;
-    margin: 30px 0 10px 0;
+.cardContainer2{
+    width: 400px;
+    margin: 0 auto;
 }
 
-.cardText p{
-    font-size: 16px;
-    font-weight: 300;
+.cardImage{
+    height: 350px;
 }
 
-.card img{
-    height:349px;
-    width: 349px;
-    padding: 15px;
-    /* background: orangered; */
-    /* justify-content: space-between; */
-}
-
-.cardText{
-    justify-content: center;
-    align-items: center;
-}
-
-.cardDefinition{
+.cardDef{
     background: url(img/définition.jpeg) no-repeat center / cover;
-    border-radius: 0 10px 10px 0;
 }
 
-.cardSymptoms{
+.cardSymp{
     background: url(img/symptômes.jpeg) no-repeat center / cover;
-    border-radius: 10px;
 }
-.cardDifficult{
+
+.cardDiff{
     background: url(img/difficultés.jpeg) no-repeat center / cover;
-    border-radius: 10px 0 0 10px;
+}
+
+.text h3{
+    margin: 20px 0;
+    font-size: clamp(13px,10vw, 25px);
+    text-align: center;
+}
+
+.text p{
+    font-weight: 300;
+    font-size: clamp(10px,10vw, 14px);
 }
 
 /* ---------------------- AVANCÉES ---------------------------- */
+
+#avancee{
+    background: rgba(125, 57, 67, .1);
+    margin: 70px 0;
+    padding-bottom: 10px;
+}
+
 .assoh3{
-    font-size: 30px;
+    font-size: clamp(15px,4vw, 55px);
     font-weight: bold;
     text-align: center;
     margin: 70px 0 40px 0;
+    color:#9F9DB0;
+}
+
+.sousTitreborder{
+    width: 25%;
+    max-height: 10px;
+    background: #9F9DB0;
+    text-align: center;
 }
 
 .titreText{
@@ -229,62 +254,41 @@ h2{
 }
 
 .paraText{
-    margin-left:40px;
-    width: 40%;
+    margin-left:80px;
+    width: 50%;
 }
 
 .assoFull{
     margin-top: 70px;
-
 }
 
 .assoCont{
     height: auto;
-    /* background: darkcyan; */
     gap: 10px;
     margin-bottom: 40px;
 }
 
 .assoCont h3{
-    font-size: 36px;
+    font-size: clamp(15px, 3vw, 36px);
     margin-bottom: 20px;
+}
+
+.sousTitreborder{
+    width:25%;
+    height: 10px;
 }
 
 .assoCont p{
     line-height: 150%;
-    font-size: 14px;
-}
-
-.gauche{
-    margin-left: 40px;
-}
-
-.droite{
-    margin-right: 40px;
-}
-
-.rose, .violet, .nude{
-    padding: 40px 0 20px 0;
-}
-
-.rose {
-    background: rgba(125, 57, 67, .2);
+    font-size: clamp(10px,10vw, 14px);
 }
 
 .rose p, .rose h3{
     color: rgba(34, 15, 18, .6);
 }
 
-.violet{
-    background: rgba(73, 18, 132, .2);
-}
-
 .violet p, .violet h3{
     color:rgba(25, 6, 46, 0.671);
-}
-
-.nude{
-    background: rgba(174, 112, 101, .2);
 }
 
 .nude p, .nude h3{
@@ -292,52 +296,90 @@ h2{
 }
 
 .assoImg{
-    width:100%
+    width:50%;
 }
 
-.assoEndo{
-    background: url(img/EndoFrance2.jpeg) no-repeat center / cover;
+.p1{
+    object-fit: contain;
 }
 
 .assoText{
     padding: 40px;
+    width: 50%;
+}
+
+.assoText span{
+    font-weight: 800;
 }
 
 .assoMind{
-    background: url(img/ruban_jaune.jpeg) no-repeat center / cover;
+    background: url(img/ruban_jaune.jpeg) no-repeat center / contain;
 }
 
 .assoFace{
-    background: url(img/Post_facebook.png) no-repeat center / cover;
+    background: url(img/facebook3D.jpeg) no-repeat center / contain;
 }
 
-.assoInsta{
-    background: url(img/postinstax2.png) no-repeat center / cover;
+.assoInsta img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 
 .assoEvent1{
-    background: url(img/endorun_2021.jpeg) no-repeat center / cover;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "p11 p11" "p12 p13";
+    grid-gap: 5px;
 }
 
+.p11{
+    grid-area: p11;
+    width: 100%;
+}
+.p12{
+    grid-area: p12;
+    
+}
+.p13{
+    grid-area: p13;
+    
+}
 .assoEvent2{
     background: url(img/fellow-metrios-tel-écran.png) no-repeat center / cover;
 }
 
 .assoEvent3{
-    background: url(img/Endoziwig.png) no-repeat center / cover;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 210px 270px;
+    grid-template-areas: "p14 p14" "p15 p16";
+    grid-gap: 5px;
 }
 
-
-
+.p14{
+    background: url(img/ziwig-logo-vert.png) no-repeat center / contain;
+    grid-area: p14;
+}
+.p15{
+    background: url(img/endoziwig2.jpeg) no-repeat center / cover;
+    grid-area: p15;
+}
+.p16{
+    background: url(img/endoziwig3.jpeg) no-repeat center / cover;
+    grid-area: p16;
+}
 
 /* ---------------------- ACTRICES ---------------------------- */
+#actrices{
+    background: rgba(73, 18, 132, .1);
+}
 
 .actriceCont{
+    margin-top: 40px;
     width: 100%;
     height: auto;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "LM text1 text1" "text2 text2 NC" "MRG text3 text3";
 }
@@ -345,7 +387,6 @@ h2{
 .actricePhoto{
     height: 300px;
     margin: 40px 40px 40px 0;
-    border-radius: 10px;
 }
 
 .photoLM{
@@ -358,11 +399,11 @@ h2{
 }
 
 .actriceText h3{
-    font-size: 36px;
+    font-size: clamp(20px, 10vw, 36px);
 }
 
 .actriceText h4{
-    font-size: 30px;
+    font-size: clamp(22px, 10vw, 30px);
     font-weight: 400;
 }
 
@@ -376,7 +417,6 @@ h2{
 .photoNC{
     grid-area: NC;
     margin: 40px 0px 40px 40px;
-
     background: url(img/Nathalie_Clary.jpeg) no-repeat center / cover;
 }
 
@@ -401,39 +441,42 @@ h2{
 
 /* ---------------------- TÉMOIGNAGES ---------------------------- */
 .testimonyContainer{
-    background: rgba(174, 112, 101, .7);
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "tem pola";
-}
-
-.polaText{
-    grid-area: tem;
+    background: rgba(174, 112, 101, .2);
 }
 
 .testimonyContainer h2, .testimonyContainer > p {
     margin-bottom: 40px;
 }
+
+.testimonyContainer h2{
+    margin-top:30px;
+
+}
 .polaText > p{
     padding: 0 40px 0 40px;
+    font-weight: 400;
+    width: 50%;
 }
 
 .cardContainerPola{
-    grid-area: pola;
     gap: 10px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .cardPola{
     background: #FAFAFA;
-    justify-content: space-around;
     align-items: center;
     margin: 40px 0;
+    width: 300px;
 }
 
 .cardPolaImg{
-    height: 220px;
-    width: 220px;
+    height: 250px;
+    width: 250px;
     border: 1px solid black;
-    margin: 15px 15px 0;
+    margin: 30px 15px 0;
 }
 
 .portrait1{
@@ -455,6 +498,8 @@ h2{
 .cardPola p{
     margin: 0 15px;
     font-weight: 200;
+    line-height: 140%;
+    padding-bottom: 10px;
 }
 
 .cardPola span{
@@ -482,12 +527,18 @@ h2{
 }
 
 .introSection{
-    /* background-color: #491284; */
     grid-area: intro;
+    margin-bottom: 20px;
 }
-
+.introSection h2{
+    margin: 0;
+}
 .introSection p{
     padding: 0 30px 0 60px;
+}
+
+.borderSize{
+    width: 65%;
 }
 
 .contactForm{
@@ -506,7 +557,6 @@ h2{
     border: none;
     background: transparent;
     font-family: 'Montserrat', sans-serif;
-
 }
 
 .form input{
@@ -516,7 +566,6 @@ h2{
     margin: 10px;
     font-weight: 600;
     font-size: 15px;
-    
 }
 
 .champ{
@@ -530,7 +579,6 @@ h2{
 .champOne{
     width: 50%;
 }
-
 
 .formButton{
     /* width: 20%; */
@@ -616,4 +664,256 @@ footer a{
 
 .youtube:hover{
     background: url(img/icones/youtube_violet.png) no-repeat center / cover;
+}
+
+@media (max-width:1024px) {
+
+    .cardContainerPola{
+        flex-wrap: wrap;
+        margin: 20px auto;
+    }
+
+
+    .introText {
+        width: 80%;
+    }
+}
+
+@media (max-width:768px) {
+    .menuDesktop, .p2, .p3, .p5, .p6, .p11, .p13, .p15, .p16{
+        display: none;
+    }
+
+    header nav{
+        flex-direction: row-reverse;
+    }
+
+    .numbersContainer{
+        flex-wrap: wrap;
+        gap:0;
+    }
+
+
+    .num1, .num2{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .num3, .num4, .num5{
+        width: 33%;
+    }
+
+    .introText{
+        width: 80%;
+        font-size: 10px;
+    }
+
+    .cardContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .assoEvent3{
+        grid-template-columns: 1fr;
+        grid-template-areas: "p14";
+    }
+
+    .assoText{
+        width: 60%;
+    }
+
+    .assoImg{
+        width: 40%;
+    }
+
+    .contactContainer{
+        grid-template-columns: 1fr;
+        grid-template-areas: "intro" "form";
+    }
+
+    .introSection{
+        grid-area: intro;
+    }
+
+    .contactForm{
+        grid-area: form;
+    }
+
+
+    /* ------------------- BURGER MENU --------------------- */
+
+    #headerResponsiveBarre{
+        display: block;
+        position: absolute;
+        width: 230px;
+        height: 100%;
+        background: rgba(132, 41, 37, 1);
+        left: -230px;
+        transition: .5s ease-out;
+        z-index: 4;
+    }
+    
+    #headerResponsiveBarre a{
+        text-decoration: none;
+    }
+    
+    .headerToggleButton{
+        position: absolute;
+        top: 20px;
+        left: 250px;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .headerToggleButton span{
+        width: 60px;
+        height: 10px;
+        border-radius: 5px;
+        background: rgba(132, 41, 37, 1);
+        display: block;
+        margin-top: 4px;
+        transition: .5s ease;
+    }
+    
+    .accueilburgerliste{
+        color: #000;
+        list-style-type: none;
+        font-size: 30px;
+        cursor: pointer;
+        padding-left: 5px;
+        text-decoration: none;
+    }
+    
+    .accueilburgerliste:hover{
+        background: rgba(236,236,236, 0.5);
+        color: #fafafa;
+    }
+    
+    #headerResponsiveBarre.active{
+        left: 0;
+    }
+    
+    #headerResponsiveBarre.active .headerToggleButton{
+        top: 2.8rem;
+        left: 235px;
+    }
+    
+    #headerResponsiveBarre.active span{
+        position: absolute;
+    }
+    #headerResponsiveBarre.active span:nth-child(1){
+        transform: rotate(45deg);
+    }
+    
+    #headerResponsiveBarre.active span:nth-child(2){
+        opacity: 0;
+    }
+    #headerResponsiveBarre.active span:nth-child(3){
+        transform: rotate(-45deg);
+    }
+}
+
+@media (max-width:411px) {
+
+    h2{
+        font-size: 40px;
+        margin-top: 12px;
+        margin-bottom: 25px;
+    }
+
+    .num1, .num2, .num3, .num4, .num5{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .assoh3{
+        font-size: 25px;
+    }
+
+    .assoCont{
+        flex-direction: column;
+    }
+
+    .assoCont2{
+        flex-direction: column-reverse;
+    }
+
+    .assoText{
+        width: 100%;
+    }
+
+    .assoImg{
+        width: 100%;
+        height: 200px;
+    }
+
+    .assoInsta{
+        height: 272px;
+    }
+
+    .assoEvent1{
+        grid-template-columns: 1fr;
+        /* grid-template-areas: "p11 p11" "p12 p13"; */
+    }
+    .p12{
+        height: 235px;
+        width: 100%;
+    }
+
+    .polaText p, .paraText{
+        width: 80%;
+    }
+    .cardContainerPola{
+        padding: 20px 0;
+}
+    .cardPolaJoana, .cardPolaCindy{
+        display: block;
+    }
+
+    .cardPola{
+        margin: 0;
+    }
+
+    .introText{
+        width: 80%;
+        font-size: 10px;
+    }
+
+    .actriceCont{
+        grid-template-columns: 1fr;
+        grid-template-areas:"ph1" "a1" "ph2" "a2" "ph3" "a3";
+    }
+    .photoLM{
+        grid-area: ph1;
+    }
+
+    .actriceText1{
+        grid-area: a1;
+    }
+
+    .photoNC{
+        grid-area: ph2;
+    }
+
+    .actriceText2{
+        grid-area: a2;
+    }
+
+    .photoMRG{
+        grid-area: ph3;
+    }
+
+    .actriceText3{
+        grid-area: a3;
+    }
+    .form{
+        width: 80%;
+    }
+
+    .footResp{
+        flex-direction: column-reverse;
+        font-size: 10px;
+    }
 }
