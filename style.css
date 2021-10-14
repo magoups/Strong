@@ -123,7 +123,7 @@ header a:hover{
 .introText p{
     font-size: clamp(15px, 2.5vw, 22px);
     font-weight: normal;
-    padding: 0 80px;
+    padding: 0 40px;
 }
 
 .introBleu a{
@@ -283,7 +283,7 @@ h2{
 }
 
 .paraText{
-    margin-left:80px;
+    margin-left:5px;
     width: 50%;
 }
 
@@ -333,7 +333,7 @@ h2{
 }
 
 .assoText{
-    padding: 40px;
+    padding: 0 0 0 10px;
     width: 50%;
 }
 
@@ -440,7 +440,7 @@ h2{
     margin-bottom: 20px;
 }
 .actriceText p{
-    padding: 40px;
+    padding: 20px 0 0 0;
 }
 
 .photoNC{
@@ -484,6 +484,7 @@ h2{
 .polaText > p{
     padding: 0 0 0 10px;
     font-weight: 400;
+    width: 50%;
 }
 
 .cardContainerPola{
@@ -508,7 +509,7 @@ h2{
 }
 
 .portrait1{
-    background: url(img/portrait11.png) no-repeat center / cover;
+    background: url(img/portrait1.png) no-repeat center / cover;
 }
 
 .portrait2{
