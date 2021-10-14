@@ -866,9 +866,13 @@ footer a{
     }
 
     h2{
-        font-size: 40px;
+        font-size: 35px;
         margin-top: 12px;
         margin-bottom: 25px;
+    }
+
+    .cardContainer2{
+        width: 100%;
     }
 
     .num1, .num2, .num3, .num4, .num5{
@@ -913,9 +917,11 @@ footer a{
         width: 100%;
     }
 
-    .polaText p, .paraText{
-        width: 80%;
+    .paraText{
+        width: 60%;
+        margin-left: 40px;
     }
+
     .cardContainerPola{
         padding: 20px 0;
 }
@@ -935,6 +941,7 @@ footer a{
     .actriceCont{
         grid-template-columns: 1fr;
         grid-template-areas:"ph1" "a1" "ph2" "a2" "ph3" "a3";
+        margin: 0;
     }
     .photoLM{
         grid-area: ph1;
