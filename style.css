@@ -482,9 +482,8 @@ h2{
 
 }
 .polaText > p{
-    padding: 0 40px 0 40px;
+    padding: 0 0 0 10px;
     font-weight: 400;
-    width: 50%;
 }
 
 .cardContainerPola{
@@ -582,13 +581,13 @@ h2{
     gap:30px;
 }
 
-.form input, .contactForm button{
+.form input, .contactForm button, .form textarea{
     border: none;
     background: transparent;
     font-family: 'Montserrat', sans-serif;
 }
 
-.form input{
+.form input, .form textarea{
     color: #000000;
     padding: 20px;
     border-bottom: 3px solid rgba(125, 57, 67, .8);
@@ -610,7 +609,6 @@ h2{
 }
 
 .formButton{
-    /* width: 20%; */
     font-weight: 600;
     font-size: 20px;
     color: rgba(125, 57, 67, .8);
@@ -875,6 +873,10 @@ footer a{
         width: 100%;
     }
 
+    .text p{
+        padding-left: 5px;
+    }
+
     .num1, .num2, .num3, .num4, .num5{
         width: 100%;
         margin-bottom: 20px;
@@ -895,8 +897,7 @@ footer a{
 
     .assoText{
         width: 100%;
-        padding-bottom: 0;
-        
+        padding:0 0 0 5px;
     }
 
     .assoImg{
@@ -912,20 +913,24 @@ footer a{
         grid-template-columns: 1fr;
         /* grid-template-areas: "p11 p11" "p12 p13"; */
     }
+
+    .p1{
+        object-fit: cover;
+    }
     .p12{
         height: 235px;
         width: 100%;
     }
 
     .paraText{
-        width: 60%;
-        margin-left: 40px;
+        width: 90%;
+        margin-left: 5px;
     }
 
     .polaText > p {
         width: 100%;
     }
-    
+
     .cardContainerPola{
         padding: 20px 0;
 }
@@ -939,17 +944,27 @@ footer a{
         font-size: 10px;
     }
 
+    .introText p{
+        padding: 0 0 0 40px;
+    }
+
     .actriceCont{
         grid-template-columns: 1fr;
         grid-template-areas:"ph1" "a1" "ph2" "a2" "ph3" "a3";
         margin: 0;
     }
+
+    .actriceText p{
+        padding: 20px 0 0 0;
+    }
+
     .photoLM{
         grid-area: ph1;
     }
 
     .actriceText1{
         grid-area: a1;
+        padding: 0 0 0 20px;
     }
 
     .photoNC{
@@ -963,12 +978,31 @@ footer a{
     .photoMRG{
         grid-area: ph3;
     }
-
+    
     .actriceText3{
         grid-area: a3;
     }
+
     .form{
         width: 80%;
+    }
+
+    .introSection p{
+        padding: 0 0 0 10px;
+    }
+
+    .introSection h2{
+        margin: 30px 0 40px 0;
+    }
+
+
+    .formOne{
+        flex-direction: column;
+    }
+
+    .champOne{
+        width: 93%;
+
     }
 
     .footResp{
