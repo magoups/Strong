@@ -94,9 +94,9 @@ header a:hover{
     color: #491284;
 }
 
-/* #headerResponsiveBarre{
+#headerResponsiveBarre{
     display: none;
-} */
+}
 /* ---------------------- INTRO ---------------------------- */
 
 .intro{
@@ -714,9 +714,15 @@ footer a{
         align-items: center;
     }
 
+    .assoEvent1{
+        display: flex;
+        height: 200px;
+        align-self: center;
+    }
+
     .assoEvent3{
-        grid-template-columns: 1fr;
-        grid-template-areas: "p14";
+    display: flex;
+    background: url(img/ziwig-logo-vert.png) no-repeat center / contain;
     }
 
     .assoText{
@@ -748,14 +754,16 @@ footer a{
         position: absolute;
         width: 230px;
         height: 100%;
-        background: rgba(132, 41, 37, 1);
+        background: #FAFAFA;
         left: -230px;
         transition: .5s ease-out;
         z-index: 4;
+        border-right: 2px solid #FAFAFA;
     }
     
     #headerResponsiveBarre a{
         text-decoration: none;
+        color: rgba(194, 100, 159, 1);
     }
     
     .headerToggleButton{
@@ -771,14 +779,14 @@ footer a{
         width: 60px;
         height: 10px;
         border-radius: 5px;
-        background: rgba(132, 41, 37, 1);
+        background: rgba(194, 100, 159, 1);
         display: block;
         margin-top: 4px;
         transition: .5s ease;
     }
     
     .accueilburgerliste{
-        color: #000;
+        background: rgba(194, 100, 159, 1);
         list-style-type: none;
         font-size: 30px;
         cursor: pointer;
@@ -787,8 +795,7 @@ footer a{
     }
     
     .accueilburgerliste:hover{
-        background: rgba(236,236,236, 0.5);
-        color: #fafafa;
+        color: rgba(73, 18, 132, 1);
     }
     
     #headerResponsiveBarre.active{
@@ -815,7 +822,19 @@ footer a{
     }
 }
 
-@media (max-width:411px) {
+@media (max-width:425px) {
+
+    h1{
+        font-size: 40px;
+    }
+    
+    .menuTitre p{
+        font-size: 10px;
+    }
+
+    .introText p {
+        padding: 0 0 0 80px ;
+    }
 
     h2{
         font-size: 40px;
@@ -830,6 +849,7 @@ footer a{
 
     .assoh3{
         font-size: 25px;
+        margin: 40px 0;
     }
 
     .assoCont{
@@ -842,6 +862,8 @@ footer a{
 
     .assoText{
         width: 100%;
+        padding-bottom: 0;
+        
     }
 
     .assoImg{
