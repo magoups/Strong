@@ -204,15 +204,15 @@ h2{
 }
 
 .cardDef{
-    background: url(img/définition.jpeg) no-repeat center / cover;
+    background: url(img/Definition.png) no-repeat center / cover;
 }
 
 .cardSymp{
-    background: url(img/symptômes.jpeg) no-repeat center / cover;
+    background: url(img/Symptomes.png) no-repeat center / cover;
 }
 
 .cardDiff{
-    background: url(img/difficultés.jpeg) no-repeat center / cover;
+    background: url(img/difficultes.png) no-repeat center / cover;
 }
 
 .text h3{
