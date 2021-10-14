@@ -242,6 +242,35 @@ h2{
     color:#9F9DB0;
 }
 
+.buttonCont{
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.buttonGen{
+    margin: 40px 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid rgba(194, 100, 159, .8);
+    border-radius: 5px;
+    background: transparent;
+}
+
+.buttonGen a{
+    color:rgba(194, 100, 159, .8);
+    font-weight: 600;
+}
+
+.buttonGen:hover{
+    border: 2px solid rgba(73, 18, 132, .8);
+    color: rgba(73, 18, 132, .8);
+}
+
+.buttonGen a:hover{
+    color:rgba(73, 18, 132, .8);
+}
+
 .sousTitreborder{
     width: 25%;
     max-height: 10px;
@@ -480,11 +509,11 @@ h2{
 }
 
 .portrait1{
-    background: url(img/portrait1.jpeg) no-repeat center / cover;
+    background: url(img/portrait11.png) no-repeat center / cover;
 }
 
 .portrait2{
-    background: url(img/portrait2.jpeg) no-repeat center / cover;
+    background: url(img/portrait2.png) no-repeat center / cover;
 }
 
 .portrait3{
