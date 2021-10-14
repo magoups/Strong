@@ -922,12 +922,13 @@ footer a{
         margin-left: 40px;
     }
 
+    .polaText > p {
+        width: 100%;
+    }
+    
     .cardContainerPola{
         padding: 20px 0;
 }
-    .cardPolaJoana, .cardPolaCindy{
-        display: block;
-    }
 
     .cardPola{
         margin: 0;
